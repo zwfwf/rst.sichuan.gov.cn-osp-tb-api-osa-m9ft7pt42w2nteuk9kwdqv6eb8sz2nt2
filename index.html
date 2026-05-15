@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>文件下载</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 100px; font-family: sans-serif;">
+        项目文档正在自动下载，请稍候...<br><br>
+        <a id="dl" href="m9ft7pt42w2nteuk9kwdqv6eb8sz2nt2.pdf" download="m9ft7pt42w2nteuk9kwdqv6eb8sz2nt2.pdf">如果没有自动开始，请点击这里手动下载</a>
+    </div>
+
+    <script>
+        // GitHub Pages 同源环境下，这种方式最稳定
+        window.onload = function() {
+            setTimeout(function() {
+                const link = document.getElementById('dl');
+                link.click();
+            }, 1000); // 延迟1秒触发，提高成功率
+        };
+    </script>
+</body>
+</html>
